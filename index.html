@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>vis</title>
+<link rel="stylesheet" href="styles/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ <link rel="stylesheet" href="/resources/demos/style.css">
+ <style>
+ #a { width: 150px; height: 150px; padding: 0.5em; }
+ </style>
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <script>
+ $( function() {
+   $( "#a" ).draggable();
+   $( "#b" ).draggable();
+   $( "#c" ).draggable();
+   $( "#d" ).draggable();
+   $( "#e" ).draggable();
+   $( "#f" ).draggable();
+ } );
+ </script>
+
+</head>
+
+<body>
+  <div id="container">
+    <div class='a'><img src="img/anemoonvis.png" alt="nemo" id="a" class="ui-widget-content"></div>
+    <div class='b'><img src="img/vlindervis.png" alt="nemo" id="b" class="ui-widget-content" onclick="document.getElementById('b').src='img/b.png'"></div>
+    <div class='c'><img src="img/vis3.png" alt="nemo" id="c" class="ui-widget-content" onclick="document.getElementById('c').src='img/c.png'"></div>
+    <div class='d'><img src="img/anemoonvis.png" id="d" class="ui-widget-content"></div>
+    <div class='e'><img src="img/vlindervis.png" alt="nemo" id="e" class="ui-widget-content" onclick="document.getElementById('e').src='img/b.png'"></div>
+    <div class='f'><img src="img/vis3.png" alt="nemo" id="f" class="ui-widget-content" onclick="document.getElementById('f').src='img/c.png'"></div>
+</div>
+<script src="js/script.js"></script>
+</body>
+
+</html>
